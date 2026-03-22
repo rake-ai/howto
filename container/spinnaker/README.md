@@ -13,7 +13,7 @@ The objective is to interact with Spinnaker pipelines from Digital.ai Release to
 
 ### What do you have?
 * A running Spinnaker instance with Gate API accessible
-* Spinnaker credentials (if authentication is enabled)
+* Spinnaker credentials
 
 ### How does it work?
 The Spinnaker integration connects Digital.ai Release to Spinnaker's Gate API, allowing you to trigger pipelines, retrieve application and pipeline information, and monitor pipeline execution status from your release flows.
@@ -29,7 +29,6 @@ The Spinnaker integration connects Digital.ai Release to Spinnaker's Gate API, a
 5. In the **UI URL** field, enter the URL of the Spinnaker UI (for example, `http://spinnaker.example.com`).
 6. Select the **Authentication method** to use when connecting to Spinnaker:
    * **Basic** — username and password authentication
-   * **None** — no authentication required
 7. If you selected **Basic** authentication, enter the **Username** and **Password** for your Spinnaker account.
 8. To test the connection, click **Test**.
 9. To save the configuration, click **Save**.
@@ -102,7 +101,7 @@ The _Get Pipeline Config (Container)_ task retrieves the full configuration of a
 6. In the **Pipeline Name** field, enter the name of the pipeline whose configuration you want to retrieve.
 
 **Output properties:**
-* **configuration** — the pipeline configuration as a JSON string
+* **configuration** — the pipeline configuration as a JSON
 
 ![Get Pipeline Config Container](images/get-pipeline-config.png)
 
